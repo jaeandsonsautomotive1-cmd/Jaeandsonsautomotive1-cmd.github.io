@@ -1,4 +1,3 @@
-HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@ HTML
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jae & Son's Automotive | Jamaica</title>
-<meta name="description" content="Jae & Son's Automotive. Vehicles, automotive parts, vehicle sourcing and automotive services in Jamaica.">
+<meta name="description" content="Jae & Son's Automotive. Vehicles, automotive parts, vehicle sourcing, mobile detailing, and taxi & charter services in Jamaica.">
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -19,7 +18,7 @@ header p{font-size:12px;letter-spacing:2px;margin-top:8px}
 nav{background:#202020;display:flex;justify-content:center;gap:22px;flex-wrap:wrap;padding:16px}
 nav a{color:white;text-decoration:none;font-weight:bold;font-size:14px}
 nav a:hover{color:#ed2028}
-.hero{min-height:390px;background:linear-gradient(90deg,rgba(0,0,0,.85),rgba(0,0,0,.2)),url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=85') center/cover;display:flex;align-items:center;padding:35px;color:white}
+.hero{min-height:390px;background:linear-gradient(90deg,rgba(0,0,0,.85),rgba(0,0,0,.2)),url('https://unsplash.com') center/cover;display:flex;align-items:center;padding:35px;color:white}
 .hero-content{max-width:580px}
 .hero h2{font-size:40px;margin-bottom:15px}
 .hero h2 span{color:#ed2028}
@@ -30,12 +29,12 @@ section{padding:48px 18px;max-width:1150px;margin:auto}
 .heading h2{font-size:28px}
 .heading p{color:#666;margin-top:9px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
-.card{background:white;border-radius:8px;overflow:hidden;box-shadow:0 3px 12px #00000018}
+.card{background:white;border-radius:8px;overflow:hidden;box-shadow:0 3px 12px #00000018;display:flex;flex-direction:column}
 .card img{width:100%;height:190px;object-fit:cover;display:block}
-.card-content{padding:18px}
+.card-content{padding:18px;flex:1;display:flex;flex-direction:column;justify-content:space-between}
 .card h3{margin-bottom:10px}
 .card p{font-size:14px;color:#666;line-height:1.6;margin-bottom:15px}
-.card a{display:inline-block;background:#222;color:white;text-decoration:none;padding:10px 15px;border-radius:4px;font-size:13px}
+.card a{display:inline-block;background:#222;color:white;text-decoration:none;padding:10px 15px;border-radius:4px;font-size:13px;align-self:flex-start}
 .services{background:#151515;color:white;max-width:none}
 .services-inner{max-width:1150px;margin:auto}
 .services .heading p{color:#ccc}
@@ -63,7 +62,7 @@ header h1{font-size:24px}
 <body>
 
 <header style="display: flex; align-items: center; gap: 15px; padding: 15px 12px; background: #101010; border-bottom: 4px solid #ed2028;">
-  <img src="jae_sons_original_logo_transparent.png" alt="Logo" style="max-width: 100%; width: 55px; height: auto;">
+  <img src="jae_sons_original_logo_transparent.png" alt="Jae & Son's Automotive Logo" style="max-width: 100%; width: 55px; height: auto;">
   <div style="text-align: left;">
     <h1 style="font-size: 22px; color: white; margin: 0; line-height: 1.2;">JAE & SON'S <span style="color: #ed2028;">AUTOMOTIVE</span></h1>
     <p style="font-size: 10px; color: #aaa; margin: 2px 0 0 0; letter-spacing: 0.5px;">YOUR AUTOMOTIVE NEEDS ARE OUR PRIORITY</p>
@@ -73,8 +72,8 @@ header h1{font-size:24px}
 <nav>
 <a href="#home">Home</a>
 <a href="#vehicles">Vehicles</a>
-<a href="#parts">Parts</a>
-<a href="#services">Services</a>
+<a href="#parts">Parts & Services</a>
+<a href="#services">What We Offer</a>
 <a href="#about">About Us</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -82,7 +81,7 @@ header h1{font-size:24px}
 <div class="hero" id="home">
 <div class="hero-content">
 <h2>JAE & SON'S <span>AUTOMOTIVE</span></h2>
-<p>Your destination for vehicles, automotive parts and services. Let us assist with your automotive needs.</p>
+<p>Your destination for vehicles, automotive parts, mobile detailing, and transportation services. Let us assist with your automotive needs.</p>
 <a class="btn" href="#vehicles">EXPLORE OUR SERVICES</a>
 </div>
 </div>
@@ -94,19 +93,23 @@ header h1{font-size:24px}
 </div>
 <div class="cards">
 <div class="card">
-<img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=85" alt="Vehicle for sale">
+<img src="https://unsplash.com" alt="New and used vehicles for sale">
 <div class="card-content">
+<div>
 <h3>New & Used Vehicles</h3>
 <p>Looking for a vehicle? Contact us about available vehicles and sales enquiries.</p>
-<a href="https://wa.me/18765159372?text=I%20am%20interested%20in%20a%20vehicle">Enquire Now</a>
+</div>
+<a href="https://wa.me">Enquire Now</a>
 </div>
 </div>
 <div class="card">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=85" alt="Car sourcing">
+<img src="https://unsplash.com" alt="Vehicle sourcing">
 <div class="card-content">
+<div>
 <h3>Vehicle Sourcing</h3>
 <p>Tell us what vehicle you are looking for and let us assist with your search.</p>
-<a href="https://wa.me/18765159372?text=I%20need%20help%20sourcing%20a%20vehicle">Find a Vehicle</a>
+</div>
+<a href="https://wa.me">Find a Vehicle</a>
 </div>
 </div>
 </div>
@@ -114,42 +117,55 @@ header h1{font-size:24px}
 
 <section id="parts">
 <div class="heading">
-<h2>AUTOMOTIVE PARTS & ACCESSORIES</h2>
-<p>New and used automotive parts for your vehicle.</p>
+<h2>AUTOMOTIVE PARTS & SERVICES</h2>
+<p>Quality parts, mobile detailing, and reliable transportation services.</p>
 </div>
 <div class="cards">
+
 <div class="card">
-<img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=85" alt="Engine parts">
+<img src="engine-parts.jpg" alt="Engine Parts" style="object-position: center 25%;">
 <div class="card-content">
+<div>
 <h3>Engine Parts</h3>
 <p>Looking for engine components and replacement parts?</p>
-<a href="https://wa.me/18765159372?text=I%20need%20engine%20parts">Request a Part</a>
+</div>
+<a href="https://wa.me">Request a Part</a>
 </div>
 </div>
+
 <div class="card">
-<img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=800&q=85" alt="Automotive mechanical parts">
+<img src="body-parts.jpg" alt="Body Parts and Accessories">
 <div class="card-content">
-<h3>Suspension & Steering</h3>
-<p>Parts for suspension and steering systems.</p>
-<a href="https://wa.me/18765159372?text=I%20need%20suspension%20or%20steering%20parts">Request a Part</a>
-</div>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1504222490345-c075b6008014?auto=format&fit=crop&w=800&q=85" alt="Automotive components">
-<div class="card-content">
-<h3>Brakes & Service Parts</h3>
-<p>Ask us about brake components and routine replacement parts.</p>
-<a href="https://wa.me/18765159372?text=I%20need%20brake%20or%20service%20parts">Request a Part</a>
-</div>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=800&q=85" alt="Car body">
-<div class="card-content">
+<div>
 <h3>Body Parts & Accessories</h3>
 <p>Contact us to enquire about body parts and vehicle accessories.</p>
-<a href="https://wa.me/18765159372?text=I%20need%20body%20parts%20or%20accessories">Request a Part</a>
+</div>
+<a href="https://wa.me">Request a Part</a>
 </div>
 </div>
+
+<div class="card">
+<img src="mobile-detailing.jpg" alt="Mobile Car Wash and Detailing">
+<div class="card-content">
+<div>
+<h3>Mobile Car Wash & Detailing</h3>
+<p>Professional mobile car wash and full vehicle detailing brought directly to your location.</p>
+</div>
+<a href="https://wa.me">Book a Wash</a>
+</div>
+</div>
+
+<div class="card">
+<img src="taxi-charter.jpg" alt="Taxi and Charter Service" style="object-position: center 55%;">
+<div class="card-content">
+<div>
+<h3>Taxi & Charter Service</h3>
+<p>Safe, comfortable, and dependable route taxi and private charter transportation.</p>
+</div>
+<a href="https://wa.me">Book a Ride</a>
+</div>
+</div>
+
 </div>
 </section>
 
@@ -173,8 +189,12 @@ header h1{font-size:24px}
 <p>Enquire about our motor vehicle repair services.</p>
 </div>
 <div class="service">
-<h3>Mobile Car Wash</h3>
-<p>Convenient mobile vehicle cleaning services.</p>
+<h3>Mobile Car Wash & Detailing</h3>
+<p>Convenient mobile vehicle cleaning and detailing services.</p>
+</div>
+<div class="service">
+<h3>Taxi & Charter Service</h3>
+<p>Reliable route taxi and private charter transportation across Jamaica.</p>
 </div>
 </div>
 </div>
@@ -184,16 +204,16 @@ header h1{font-size:24px}
 <div class="heading">
 <h2>ABOUT JAE & SON'S AUTOMOTIVE</h2>
 </div>
-<p>Jae & Son's Automotive is focused on providing automotive solutions through vehicle sales, parts and accessories, sourcing and automotive services. Our goal is to make your automotive needs our priority.</p>
+<p>Jae & Son's Automotive is focused on providing complete automotive solutions through vehicle sales, parts and accessories, sourcing, mobile detailing, and reliable transportation services. Our goal is to make your automotive needs our priority.</p>
 </section>
 
 <section class="contact" id="contact">
 <div class="contact-inner">
-<img src="jae_sons_original_logo_transparent.png" alt="Logo" style="display: block; max-width: 100%; width: 120px; height: auto; margin: 0 auto 15px auto;">
+<img src="jae_sons_original_logo_transparent.png" alt="Jae & Son's Automotive Logo" style="display: block; max-width: 100%; width: 120px; height: auto; margin: 0 auto 15px auto;">
 <h2>CONTACT US</h2>
-<p>Have a question about a vehicle, part or service? Contact us directly.</p>
+<p>Have a question about a vehicle, part, or service? Contact us directly.</p>
 <p class="phone">876-515-9372</p>
-<a class="btn" href="https://wa.me/18765159372">CHAT WITH US ON WHATSAPP</a>
+<a class="btn" href="https://wa.me">CHAT WITH US ON WHATSAPP</a>
 </div>
 </section>
 
@@ -203,7 +223,7 @@ header h1{font-size:24px}
 <p>© 2026 Jae & Son's Automotive. All Rights Reserved.</p>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/18765159372">WhatsApp Us</a>
+<a class="whatsapp" href="https://wa.me">WhatsApp Us</a>
 
 </body>
-</html> 
+</html>
